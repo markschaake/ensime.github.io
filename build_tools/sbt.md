@@ -109,7 +109,7 @@ Think long and hard before adding any of these settings to your global `~/.sbt/0
 Here is an example that sets a specific memory size for the ensime server:
 
 ```scala
-ensimeJavaFlags in ThisBuild := Seq("-Xss2m", "-Xmx2g", "-XX:MaxMetaspaceSize=512m")
+ensimeJavaFlags in ThisBuild := Seq("-Xms2m", "-Xmx2g", "-XX:MaxMetaspaceSize=512m")
 ```
 
 another, to use ENSIME on a Java 6 or 7 project (the server needs JDK 8). This is reasonably safe in your `~/.sbt/0.13/global.sbt`:
